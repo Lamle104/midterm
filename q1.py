@@ -12,7 +12,7 @@
 def computeMinimumPayment( balance ): 
     #TODO write code inside this function that achieves the functionality described above
 
-    if balance > 10:  #if balance is greater than 10 or 2.1% of customers balance
+    if balance * 0.021 > 10:  #if balance is greater than 10 or 2.1% of customers balance
         return balance * 0.021 #return balance times 0.021 is the customers minimum payment.
     elif balance < 10: #else if 10 is greater than the balance. 
         return balance #return minimum payment the same as balance
